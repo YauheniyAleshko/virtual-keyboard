@@ -1,0 +1,61 @@
+.outputField{
+  resize: none;
+  min-width: 400px;
+  min-height: 150px;
+  background-color: aqua;
+}
+
+.keyboard{
+  width: 820px;
+  height: 300px;
+  border: 2px solid black;
+  margin: 0 auto;
+  background-color: grey;
+}
+
+.button{
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  margin: 3px;
+  padding: 3px;
+  float: left;
+  background-color: black;
+  color: yellow;
+}
+
+.backspace{
+  width: 100px;
+}
+
+.tab{
+  width: 47px;
+}
+
+.capslk{
+  width: 100px;
+}
+
+
+
+.enter{
+  width: 90px;
+}
+
+.shiftL{
+  width: 100px;
+}
+
+.shiftR{
+  width: 90px;
+}
+
+
+
+.space{
+  width: 360px;
+}
+
+
+
+
