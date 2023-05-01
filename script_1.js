@@ -98,9 +98,9 @@ for(let i = 0; i < buttons.length; i++){
   buttons[i].setAttribute('lower_case_name', buttons[i].innerText.toLowerCase());
 }
 
-window.addEventListener('keydown',function(e){
-  console.log(e.key)
-})
+//window.addEventListener('keydown',function(e){
+//  console.log(e.key)
+//})
 
 window.addEventListener('keydown', function(e){
   for(i = 0; i < buttons.length; i++){
@@ -138,20 +138,23 @@ window.addEventListener('keyup', function(e){
   }
 })
 
+keyBoard.addEventListener('mousedown', function(e){
+  e.target.classList.add('active');
+});
+
+keyBoard.addEventListener('mouseup', function(e){
+  e.target.classList.add('remove');
+  setTimeout(() => {
+    e.target.classList.remove('remove');
+    e.target.classList.remove('active');
+    console.log(e.target)
+  }, 500);
+});
 
 
 
-//for(let i = 0; i < buttons.length; i++){
-//  console.log(buttons[i])
-//}
 
 
-
-/*window.addEventListener('keydown', function(e){
-  for(let i = 0; i < button.length; i++){
-    console.log(i);
-  }
-});*/
 
 
 
