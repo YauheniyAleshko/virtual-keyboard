@@ -1,4 +1,4 @@
-const outputField = document.createElement('textarea');
+/*const outputField = document.createElement('textarea');
 outputField.className = 'outputField';
 document.body.append(outputField);
 
@@ -45,9 +45,8 @@ function printKeyBoardEn(){
       out += '<div class = "button end">' + String.fromCharCode(keyBoardValuesEn[i]) + '</div>';
     }else if(i === 63){
       out += '<div class = "button ctrlR">' + String.fromCharCode(keyBoardValuesEn[i]) + '</div>';
-    }
-    else{
-      out += '<div class = button>' + String.fromCharCode(keyBoardValuesEn[i]) + '</div>';
+    }else{
+      out += '<div class = "button" data = "'+keyBoardValuesEn[i]+'">' + String.fromCharCode(keyBoardValuesEn[i]) + '</div>';
     }
   }
   document.querySelector('.keyboard').innerHTML = out;
@@ -103,6 +102,9 @@ end.innerHTML = '&rArr;';
 const ctrlR = document.querySelector('.ctrlR');
 ctrlR.innerHTML = 'Ctrl';
 
-
+document.onkeypress = function (e){
+  console.log(e.code);
+  
+}*/
 
 
