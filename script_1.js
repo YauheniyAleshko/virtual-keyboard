@@ -1,5 +1,6 @@
 const outputField = document.createElement('textarea');
 outputField.className = 'outputField';
+//outputField.setAttribute('autofocus','')
 document.body.append(outputField);
 
 const keyBoard = document.createElement('div');
@@ -102,8 +103,23 @@ for(let i = 0; i < buttons.length; i++){
 //  console.log(e.key)
 //})
 
+
+
 window.addEventListener('keydown', function(e){
+  let cursor = outputField.selectionStart;
+  let textValue = document.querySelector('.outputField').value;
+  if(e.keyCode === 9 ){
+    /*textValue = textValue.slice(0,textValue.length - 0);
+    //textValue +='';
+    console.log(textValue)*/
+    
+    
+  };
+  
+  document.querySelector('.outputField').value += e.key;
+  //document.querySelector('.outputField').value += e.key;
   for(i = 0; i < buttons.length; i++){
+    
     if(e.key === buttons[i].getAttribute('button_name') || e.key === buttons[i].getAttribute('lower_case_name')){
       buttons[i].classList.add('active')
     }else if(e.key === 'ArrowUp'){
@@ -124,13 +140,15 @@ window.addEventListener('keydown', function(e){
     }else if(e.key === 'ArrowRight'){
       buttons[62].classList.add('active');
     }
-  }    
+  } 
+  
 })
+
+
 
 window.addEventListener('keyup', function(e){
   for(i = 0; i < buttons.length; i++){
     if(buttons[i].classList.contains('active')){
-      
       buttons[i].classList.add('remove')
     }
     buttons[i].classList.remove('active');
@@ -140,6 +158,9 @@ window.addEventListener('keyup', function(e){
 
 keyBoard.addEventListener('mousedown', function(e){
   e.target.classList.add('active');
+  document.querySelector('.outputField').value += e.target.textContent;
+  console.dir(event.target)
+  e.preventDefault();
 });
 
 keyBoard.addEventListener('mouseup', function(e){
@@ -147,9 +168,21 @@ keyBoard.addEventListener('mouseup', function(e){
   setTimeout(() => {
     e.target.classList.remove('remove');
     e.target.classList.remove('active');
-    console.log(e.target)
-  }, 500);
+  }, 1000);
 });
+
+const tab = document.querySelector('.tab');
+
+window.onkeydown = evt => {
+  if (evt.key == 'Tab' || 'Alt') {
+      evt.preventDefault();
+  }
+}
+
+
+console.log();
+
+
 
 
 
