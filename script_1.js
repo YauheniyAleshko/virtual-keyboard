@@ -106,7 +106,7 @@ for(let i = 0; i < buttons.length; i++){
 
 
 window.addEventListener('keydown', function(e){
-  let cursor = outputField.selectionStart;
+  /*let cursor = outputField.selectionStart;
   let textValue = document.querySelector('.outputField').value;
   if(e.keyCode === 9 ){
     /*textValue = textValue.slice(0,textValue.length - 0);
@@ -114,7 +114,7 @@ window.addEventListener('keydown', function(e){
     console.log(textValue)*/
     
     
-  };
+  //};
   
   document.querySelector('.outputField').value += e.key;
   //document.querySelector('.outputField').value += e.key;
@@ -160,7 +160,6 @@ keyBoard.addEventListener('mousedown', function(e){
   e.target.classList.add('active');
   document.querySelector('.outputField').value += e.target.textContent;
   console.dir(event.target)
-  e.preventDefault();
 });
 
 keyBoard.addEventListener('mouseup', function(e){
@@ -182,7 +181,13 @@ window.onkeydown = evt => {
 
 console.log();
 
+const info = document.createElement('div');
+info.className = 'info';
+document.body.append(info);
 
+const stroke_info = 'Еще работаю над таском, если возможно проверьте чуть позже пожалуйста';
+
+info.append(stroke_info);
 
 
 
