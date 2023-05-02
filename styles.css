@@ -54,31 +54,122 @@
 }
 
 .backspace{
+  height: 40px;
   width: 101px;
+  border: 1px solid black;
+  margin: 3px;
+  padding: 3px;
+  float: left;
+  background-color: black;
+  color: yellow;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 .tab{
+  height: 40px;
   width: 47px;
+  border: 1px solid black;
+  margin: 3px;
+  padding: 3px;
+  float: left;
+  background-color: black;
+  color: yellow;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-.capslk{
+.capslock{
   width: 94px;
+  height: 40px;
+  border: 1px solid black;
+  margin: 3px;
+  padding: 3px;
+  float: left;
+  background-color: black;
+  color: yellow;
+  cursor: pointer;
+  border-radius: 5px;
+
 }
 
 .enter{
   width: 101px;
+  height: 40px;
+  border: 1px solid black;
+  margin: 3px;
+  padding: 3px;
+  float: left;
+  background-color: black;
+  color: yellow;
+  cursor: pointer;
+  border-radius: 5px;
+
 }
 
-.shift{
-  width: 98px;
+.shift_left{
+  width: 94px;
+  height: 40px;
+  border: 1px solid black;
+  margin: 3px;
+  padding: 3px;
+  float: left;
+  background-color: black;
+  color: yellow;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.shift_right{
+  width: 101px;
+  height: 40px;
+  border: 1px solid black;
+  margin: 3px;
+  padding: 3px;
+  float: left;
+  background-color: black;
+  color: yellow;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 .space{
   width: 362px;
+  height: 40px;
+  border: 1px solid black;
+  margin: 3px;
+  padding: 3px;
+  float: left;
+  background-color: black;
+  color: yellow;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-.ctrl{
- width:45px ;
+.ctrl_left{
+  width:42px;
+  height: 40px;
+  border: 1px solid black;
+  margin: 3px;
+  padding: 3px;
+  float: left;
+  background-color: black;
+  color: yellow;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.ctrl_right{
+  width:47px;
+  height: 40px;
+  border: 1px solid black;
+  margin: 3px;
+  padding: 3px;
+  float: left;
+  background-color: black;
+  color: yellow;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 
