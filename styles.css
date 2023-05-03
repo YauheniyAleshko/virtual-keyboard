@@ -1,4 +1,4 @@
-.outputField{
+.textarea{
   resize: none;
   width: 820px;
   height: 200px;
@@ -15,7 +15,15 @@
   padding: 5px;
 }
 
-.button{
+.button,
+.altleft,
+.altright,
+.numpaddecimal,
+.metaleft,
+.arrowup,
+.arrowleft,
+.arrowright,
+.arrowdown{
   width: 40px;
   height: 40px;
   border: 1px solid black;
@@ -32,9 +40,9 @@
   background-color: rgb(243, 61, 91);
 }
 
-.button.active{
-  background-color: aquamarine;
-  color: black;
+.active{
+  background-color: aquamarine!important;
+  color: black!important;
 }
 
 .button.remove{
@@ -107,7 +115,7 @@
 
 }
 
-.shift_left{
+.shiftleft{
   width: 94px;
   height: 40px;
   border: 1px solid black;
@@ -120,7 +128,7 @@
   border-radius: 5px;
 }
 
-.shift_right{
+.shiftright{
   width: 101px;
   height: 40px;
   border: 1px solid black;
@@ -146,7 +154,7 @@
   border-radius: 5px;
 }
 
-.ctrl_left{
+.controlleft{
   width:42px;
   height: 40px;
   border: 1px solid black;
@@ -159,7 +167,7 @@
   border-radius: 5px;
 }
 
-.ctrl_right{
+.controlright{
   width:47px;
   height: 40px;
   border: 1px solid black;
