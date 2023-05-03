@@ -1,0 +1,190 @@
+.textarea{
+  resize: none;
+  width: 820px;
+  height: 200px;
+  margin: 0 auto 20px auto;
+  display: block;
+}
+
+.keyboard{
+  width: 820px;
+  height: 270px;
+  border: 2px solid black;
+  margin: 0 auto;
+  background-color: grey;
+  padding: 5px;
+}
+
+.button,
+.altleft,
+.altright,
+.numpaddecimal,
+.metaleft,
+.arrowup,
+.arrowleft,
+.arrowright,
+.arrowdown{
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  margin: 3px;
+  padding: 3px;
+  float: left;
+  background-color: black;
+  color: yellow;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.button:hover{
+  background-color: rgb(243, 61, 91);
+}
+
+.active{
+  background-color: aquamarine!important;
+  color: black!important;
+}
+
+.button.remove{
+  animation: button_animation .5s forwards;
+}
+
+@keyframes button_animation{
+  0%{
+    background-color: aquamarine;
+    color: black;
+  }
+
+  100%{
+    background-color: black;
+    color: yellow;
+  }
+}
+
+.backspace{
+  height: 40px;
+  width: 101px;
+  border: 1px solid black;
+  margin: 3px;
+  padding: 3px;
+  float: left;
+  background-color: black;
+  color: yellow;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.tab{
+  height: 40px;
+  width: 47px;
+  border: 1px solid black;
+  margin: 3px;
+  padding: 3px;
+  float: left;
+  background-color: black;
+  color: yellow;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.capslock{
+  width: 94px;
+  height: 40px;
+  border: 1px solid black;
+  margin: 3px;
+  padding: 3px;
+  float: left;
+  background-color: black;
+  color: yellow;
+  cursor: pointer;
+  border-radius: 5px;
+
+}
+
+.enter{
+  width: 101px;
+  height: 40px;
+  border: 1px solid black;
+  margin: 3px;
+  padding: 3px;
+  float: left;
+  background-color: black;
+  color: yellow;
+  cursor: pointer;
+  border-radius: 5px;
+
+}
+
+.shiftleft{
+  width: 94px;
+  height: 40px;
+  border: 1px solid black;
+  margin: 3px;
+  padding: 3px;
+  float: left;
+  background-color: black;
+  color: yellow;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.shiftright{
+  width: 101px;
+  height: 40px;
+  border: 1px solid black;
+  margin: 3px;
+  padding: 3px;
+  float: left;
+  background-color: black;
+  color: yellow;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.space{
+  width: 362px;
+  height: 40px;
+  border: 1px solid black;
+  margin: 3px;
+  padding: 3px;
+  float: left;
+  background-color: black;
+  color: yellow;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.controlleft{
+  width:42px;
+  height: 40px;
+  border: 1px solid black;
+  margin: 3px;
+  padding: 3px;
+  float: left;
+  background-color: black;
+  color: yellow;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.controlright{
+  width:47px;
+  height: 40px;
+  border: 1px solid black;
+  margin: 3px;
+  padding: 3px;
+  float: left;
+  background-color: black;
+  color: yellow;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+.info{
+  font-size: 24px;
+}
+
+
+
+
